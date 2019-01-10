@@ -1,0 +1,16 @@
+.hcard {
+  display: flex;
+}
+
+.hcard-builder {
+  width: 50%;
+}
+
+.preview {
+  width: 50%;
+  background-color: #e1e4e7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
