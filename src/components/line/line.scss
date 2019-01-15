@@ -1,0 +1,13 @@
+.line {
+  color: #e1e4e7;
+  width: 100%;
+  border: 0.5px solid;
+
+  //To reset the browser default styling
+  margin: 0;
+  height: 0;
+}
+
+.line--small {
+  margin-bottom: 20px;
+}
