@@ -1,16 +1,29 @@
 .hcard {
   display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
 }
 
 .hcard-builder {
-  width: 50%;
+  width: 48%;
+  padding: 50px;
+  text-align: left;
 }
 
 .preview {
-  width: 50%;
+  width: 52%;
   background-color: #e1e4e7;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hcard-builder__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hcard-builder__button {
+  width: 100%;
 }

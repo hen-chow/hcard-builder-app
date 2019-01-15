@@ -1,12 +1,18 @@
 .hcard-preview {
   background-color: #ffffff;
-  width: 740px;
-  height: 505px;
-  border: 1px solid red;
+  width: 82%;
+  height: 48%;
 }
 
 .hcard-preview--header {
   background-color: #2c3e50;
-  height: 186px;
+  height: 100px;
   color: #ffffff;
+}
+
+.photo {
+  height: 108px;
+  width: 87px;
+  margin: 1rem;
+  float: right;
 }

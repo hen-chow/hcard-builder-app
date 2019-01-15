@@ -1,12 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import HCardPreview from '../hcard-preview/hcard-preview';
-import PersonalDetailsForm from '../personal-details-form/personal-details-form';
-import AddressDetailsForm from '../address-details-form/address-details-form';
-import Button from '../button/button';
+import HCardPreview from 'components/hcard-preview/hcard-preview';
+import PersonalDetailsForm from 'components/personal-details-form/personal-details-form';
+import AddressDetailsForm from 'components/address-details-form/address-details-form';
+import Button from 'components/button/button';
 import './hcard-builder.scss';
 
+/*
+ * Internal state for the <HCardBuilder /> component
+ * - givenName    {String}  - given name entry for the hcard
+ * - surnaame     {String}  - surname entry for the hcard
+ * - email        {String}  - email entry for the hcard
+ * - phone        {String}  - phone entry for the hcard
+ * - streetNumber {String}  - street number entry for the hcard
+ * - streetName   {String}  - street name entry for the hcard
+ * - suburb       {String}  - suburb entry for the hcard
+ * - state        {String}  - state entry for the hcard
+ * - postcode     {String}  - postcode entry for the hcard
+ * - country      {String}  - country entry for the hcard
+ * - photo        {String}  - photo entry for the hcard
+ */
 class HCardBuilder extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +28,8 @@ class HCardBuilder extends React.Component {
       surname: '',
       email: '',
       phone: '',
-      streetAddress: '',
+      streetNumber: '',
+      streetName: '',
       suburb: '',
       state: '',
       postcode: '',
@@ -28,16 +41,37 @@ class HCardBuilder extends React.Component {
     this.uploadImage = this.uploadImage.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
     this.setInputRef = this.setInputRef.bind(this);
+    this.triggerImageUpload = this.triggerImageUpload.bind(this);
   }
 
+  /**
+   * @description handler when user clicks to create hcard
+   */
   onCreateHcardClick() {
     // click handler for create hcard
   }
 
-  uploadImage() {
-    // click handler for upload image
+  /**
+   * @description  handler when user confirms image selection for upload
+   * @param {Object} input event object
+   */
+  uploadImage(event) {
+    this.setState({
+      photo: URL.createObjectURL(event.target.files[0]),
+    });
   }
 
+  /**
+   * @description handler to trigger the image upload process
+   */
+  triggerImageUpload() {
+    this.input.click();
+  }
+
+  /**
+   * @description handler when value changes in <input />
+   * @param {Object} input event object
+   */
   onInputChange(event) {
     const { target } = event;
     this.setState({ [target.name]: target.value });
@@ -54,17 +88,24 @@ class HCardBuilder extends React.Component {
           <h1>hCard Builder</h1>
           <PersonalDetailsForm onInputChange={this.onInputChange} />
           <AddressDetailsForm onInputChange={this.onInputChange} />
-          <Button onClick={this.uploadImage} color="grey">Upload Avatar</Button>
-          <Button onClick={this.onCreateHcardClick} color="light-blue">Create hCard</Button>
+          <div className="hcard-builder__buttons">
+            <div className="hcard-builder__button">
+              <Button color="grey" onClick={this.triggerImageUpload}>Upload Avatar Image</Button>
+              <input id="fileItem" type="file" onChange={this.uploadImage} color="grey" ref={this.setInputRef} />
+            </div>
+            <Button buttonType="submit" className="hcard-builder__button" onClick={this.onCreateHcardClick} color="light-blue">Create hCard</Button>
+          </div>
         </div>
         <div className="preview">
+          <h1>Preview</h1>
           <HCardPreview
             givenName={this.state.givenName}
             surname={this.state.surname}
             photo={this.state.photo}
             email={this.state.email}
             phone={this.state.phone}
-            streeAddress={this.state.streetAddress}
+            streetNumber={this.state.streetNumber}
+            streetName={this.state.streetName}
             suburb={this.state.suburb}
             state={this.state.state}
             postcode={this.state.postcode}
