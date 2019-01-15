@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Line from 'components/line/line';
+import './personal-details-form.scss';
 
 class PersonalDetailsForm extends React.Component {
   constructor(props) {
@@ -15,16 +17,29 @@ class PersonalDetailsForm extends React.Component {
   render() {
     return (
       <div className="personal-details-form">
-        <h3>PERSONAL DETAILS</h3>
+        <span className="form__title">Personal details</span>
+        <Line />
         <form ref={this.setInputRef}>
-          <label htmlFor="givenNameInput">Given Name</label>
-          <input id="givenNameInput" type="text" name="givenName" onChange={this.props.onInputChange} />
-          <label htmlFor="surnameInput">Surname</label>
-          <input id="surnameInput" type="text" name="surname" onChange={this.props.onInputChange} />
-          <label htmlFor="emailInput">Email</label>
-          <input id="emailInput" type="text" name="email" onChange={this.props.onInputChange} />
-          <label htmlFor="phoneInput">Phone</label>
-          <input id="phoneInput" type="text" name="phone" onChange={this.props.onInputChange} />
+          <div className="form__row">
+            <div className="form__field form__field--left">
+              <label htmlFor="givenNameInput">Given Name</label>
+              <input id="givenNameInput" type="text" name="givenName" onChange={this.props.onInputChange} />
+            </div>
+            <div className="form__field form__field--right">
+              <label htmlFor="surnameInput">Surname</label>
+              <input id="surnameInput" type="text" name="surname" onChange={this.props.onInputChange} />
+            </div>
+          </div>
+          <div className="form__row">
+            <div className="form__field form__field--left">
+              <label htmlFor="emailInput">Email</label>
+              <input id="emailInput" type="text" name="email" onChange={this.props.onInputChange} />
+            </div>
+            <div className="form__field form__field--right">
+              <label htmlFor="phoneInput">Phone</label>
+              <input id="phoneInput" type="text" name="phone" onChange={this.props.onInputChange} />
+            </div>
+          </div>
         </form>
       </div>
     );
@@ -32,6 +47,9 @@ class PersonalDetailsForm extends React.Component {
 }
 
 PersonalDetailsForm.propTypes = {
+  /*
+   * callback when input in form changes 
+   */
   onInputChange: PropTypes.func,
 };
 
