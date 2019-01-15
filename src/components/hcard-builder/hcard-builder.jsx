@@ -88,16 +88,18 @@ class HCardBuilder extends React.Component {
           <h1>hCard Builder</h1>
           <PersonalDetailsForm onInputChange={this.onInputChange} />
           <AddressDetailsForm onInputChange={this.onInputChange} />
-          <div className="hcard-builder__buttons">
-            <div className="hcard-builder__button">
+          <div className="form__row hcard-builder__buttons">
+            <div className="form__field form__field--left hcard-builder__button">
               <Button color="grey" onClick={this.triggerImageUpload}>Upload Avatar Image</Button>
               <input id="fileItem" type="file" onChange={this.uploadImage} color="grey" ref={this.setInputRef} />
             </div>
-            <Button buttonType="submit" className="hcard-builder__button" onClick={this.onCreateHcardClick} color="light-blue">Create hCard</Button>
+            <div className="form__field form__field--right hcard-builder__button">
+              <Button buttonType="submit" onClick={this.onCreateHcardClick} color="light-blue">Create hCard</Button>
+            </div>
           </div>
         </div>
         <div className="preview">
-          <h1>Preview</h1>
+          {/* <h2 className="preview__title">hCard Preview</h2> */}
           <HCardPreview
             givenName={this.state.givenName}
             surname={this.state.surname}

@@ -15,15 +15,15 @@
   background-color: #e1e4e7;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hcard-builder__buttons {
-  display: flex;
-  justify-content: space-between;
+.hcard-builder__button {
+  width: 302px;
 }
 
-.hcard-builder__button {
-  width: 100%;
+.preview__title {
+  text-align: right;
 }
