@@ -1,0 +1,20 @@
+.preview-field {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+
+.preview-field__label {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.preview-field__text {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: bottom;
+}
