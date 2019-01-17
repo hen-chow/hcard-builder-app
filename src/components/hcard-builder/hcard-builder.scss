@@ -1,17 +1,14 @@
 .hcard {
   display: flex;
-  // justify-content: space-evenly;
 }
 
 .hcard-builder {
-  // width: 48%;
   padding: 50px;
   text-align: left;
 }
 
 .hcard-builder__preview {
   min-height: 100vh;
-  // width: 52%;
   background-color: #e1e4e7;
   display: flex;
   flex-direction: column;
