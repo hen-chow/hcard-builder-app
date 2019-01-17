@@ -69,17 +69,64 @@ const HcardPreview = (props) => {
 }
 
 HcardPreview.propTypes = {
+  /*
+   * CSS class applied to the component
+   */
   className: PropTypes.string,
+
+  /*
+   * given name entered in form
+   */
   givenName: PropTypes.string,
+
+  /*
+   * surname entered in form
+   */
   surname: PropTypes.string,
+
+  /*
+   * image uploaded through form
+   */
   photo: PropTypes.string,
+
+  /*
+   * email entered in form
+   */
   email: PropTypes.string,
+
+  /*
+   * phone numbered entered in form
+   */
   phone: PropTypes.string,
+
+  /*
+   * street number entered in form
+   */
   streetNumber: PropTypes.string,
+
+  /*
+   * street name entered in form
+   */
   streetName: PropTypes.string,
+
+  /*
+   * suburb entered in form
+   */
   suburb: PropTypes.string,
+
+  /*
+   * state details entered in form
+   */
   region: PropTypes.string,
+
+  /*
+   * postcode entered in form
+   */
   postcode: PropTypes.string,
+
+  /*
+   * country details entered in form
+   */
   country: PropTypes.string,
 };
 
