@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import './preview-field.scss';
 
 const PreviewField = (props) => {
+  const classes = classNames('preview-field', props.className);
   const textClasses = classNames('preview-field__text', props.hCardProperty);
 
   return (
-    <div className="preview-field">
+    <div className={classes}>
       <label className="preview-field__label">{props.label}</label>
       <span className={textClasses}>{props.text}</span>
     </div>
@@ -15,6 +16,11 @@ const PreviewField = (props) => {
 }
 
 PreviewField.propTypes = {
+  /**
+   * CSS class to be applied to component
+   */
+  className: PropTypes.string,
+
   /**
    * label of the field
    */

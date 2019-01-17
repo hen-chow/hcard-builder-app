@@ -11,6 +11,10 @@ const HcardPreview = (props) => {
 
   const avatarUrl = !props.photo ? AvatarImage : props.photo;
 
+  const suburbState = props.suburb !== '' && props.state !== ''
+    ? `${props.suburb}, ${props.state}`
+    : `${props.suburb} ${props.state}`;
+
   return (
     <div className={classes}>
       <div className="hcard-preview__header">
@@ -31,15 +35,32 @@ const HcardPreview = (props) => {
         />
         <Line />
         <div className="adr">
-          <label className="hcard-preview__label">Address</label>
-          <div className="street-address">{`${props.streetNumber} ${props.streetName}`}</div>
+          <PreviewField
+            label="Address"
+            text={`${props.streetNumber} ${props.streetName}`}
+            hCardProperty="street-address"
+          />
           <Line />
-          <span className="locality">{props.suburb}
-          </span><span className="region">{props.state}</span>
-          <label className="hcard-preview__label">Postcode</label>
-          <span className="postal-code">{props.postcode}</span>
-          <label className="hcard-preview__label">Country</label>
-          <span className="country-name">{props.country}</span>
+          <PreviewField
+            label=""
+            text={suburbState}
+            hCardProperty="locality region"
+          />
+          <Line />
+          <div className="hcard-preview__row">
+            <PreviewField
+              className="hcard-preview__preview-field"
+              label="Postcode"
+              text={props.postcode}
+              hCardProperty="postal-code"
+            />
+            <PreviewField
+              className="hcard-preview__preview-field"
+              label="Country"
+              text={props.country}
+              hCardProperty="country-name"            
+            />
+          </div>
           <Line />
         </div>
       </div>

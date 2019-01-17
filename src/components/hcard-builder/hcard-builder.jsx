@@ -98,8 +98,10 @@ class HCardBuilder extends React.Component {
             </div>
           </div>
         </div>
-        <div className="preview">
-          {/* <h2 className="preview__title">hCard Preview</h2> */}
+        <div className="hcard-builder__preview">
+          <div className="hcard-builder__preview-header">
+            <h2 className="hcard-builder__preview-title">hCard Preview</h2>
+          </div>
           <HCardPreview
             givenName={this.state.givenName}
             surname={this.state.surname}

@@ -2,6 +2,7 @@
   background-color: #ffffff;
   width: 82%;
   height: 48%;
+  padding-bottom: 40px;
 }
 
 .hcard-preview__header {
@@ -29,4 +30,16 @@
   width: 87px;
   margin: 1rem;
   float: right;
+}
+
+.hcard-preview__row {
+  display: flex;
+
+  .preview-field {
+    width: 50%;
+  }
+}
+
+.hcard-preview__preview-field label {
+  width: 40%;
 }
