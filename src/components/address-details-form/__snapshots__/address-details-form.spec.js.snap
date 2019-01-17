@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddressDetailsForm /> renders the expected HTML 1`] = `
+<div
+  className="address-details-form"
+>
+  <span
+    className="form__title"
+  >
+    Address
+  </span>
+  <hr
+    className="line line--small"
+  />
+  <form>
+    <div
+      className="form__row"
+    >
+      <div
+        className="form__field form__field--left"
+      >
+        <label
+          htmlFor="streetNumberInput"
+        >
+          House Name or #
+        </label>
+        <input
+          id="streetNumberInput"
+          name="streetNumber"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__field form__field--right"
+      >
+        <label
+          htmlFor="streetNameInput"
+        >
+          Street
+        </label>
+        <input
+          id="streetNameInput"
+          name="streetName"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="form__row"
+    >
+      <div
+        className="form__field form__field--left"
+      >
+        <label
+          htmlFor="suburbInput"
+        >
+          Suburb
+        </label>
+        <input
+          id="suburbInput"
+          name="suburb"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__field form__field--right"
+      >
+        <label
+          htmlFor="stateInput"
+        >
+          State
+        </label>
+        <input
+          id="stateInput"
+          name="state"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="form__row"
+    >
+      <div
+        className="form__field form__field--left"
+      >
+        <label
+          htmlFor="postcode"
+        >
+          Postcode
+        </label>
+        <input
+          id="postcode"
+          name="postcode"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__field form__field--right"
+      >
+        <label
+          htmlFor="countryInput"
+        >
+          Country
+        </label>
+        <input
+          id="countryInput"
+          name="country"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;

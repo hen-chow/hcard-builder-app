@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders the expected HTML 1`] = `
+<button
+  className="button button--light-blue"
+  onClick={[Function]}
+  type="button"
+/>
+`;

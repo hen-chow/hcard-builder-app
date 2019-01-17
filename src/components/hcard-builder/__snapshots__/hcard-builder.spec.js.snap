@@ -1,0 +1,387 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<hCardBuilder /> renders the expected HTML 1`] = `
+<div
+  className="hcard"
+>
+  <div
+    className="hcard-builder"
+  >
+    <h1>
+      hCard Builder
+    </h1>
+    <div
+      className="personal-details-form"
+    >
+      <span
+        className="form__title"
+      >
+        Personal details
+      </span>
+      <hr
+        className="line line--small"
+      />
+      <form>
+        <div
+          className="form__row"
+        >
+          <div
+            className="form__field form__field--left"
+          >
+            <label
+              htmlFor="givenNameInput"
+            >
+              Given Name
+            </label>
+            <input
+              id="givenNameInput"
+              name="givenName"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form__field form__field--right"
+          >
+            <label
+              htmlFor="surnameInput"
+            >
+              Surname
+            </label>
+            <input
+              id="surnameInput"
+              name="surname"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="form__row"
+        >
+          <div
+            className="form__field form__field--left"
+          >
+            <label
+              htmlFor="emailInput"
+            >
+              Email
+            </label>
+            <input
+              id="emailInput"
+              name="email"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form__field form__field--right"
+          >
+            <label
+              htmlFor="phoneInput"
+            >
+              Phone
+            </label>
+            <input
+              id="phoneInput"
+              name="phone"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      className="address-details-form"
+    >
+      <span
+        className="form__title"
+      >
+        Address
+      </span>
+      <hr
+        className="line line--small"
+      />
+      <form>
+        <div
+          className="form__row"
+        >
+          <div
+            className="form__field form__field--left"
+          >
+            <label
+              htmlFor="streetNumberInput"
+            >
+              House Name or #
+            </label>
+            <input
+              id="streetNumberInput"
+              name="streetNumber"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form__field form__field--right"
+          >
+            <label
+              htmlFor="streetNameInput"
+            >
+              Street
+            </label>
+            <input
+              id="streetNameInput"
+              name="streetName"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="form__row"
+        >
+          <div
+            className="form__field form__field--left"
+          >
+            <label
+              htmlFor="suburbInput"
+            >
+              Suburb
+            </label>
+            <input
+              id="suburbInput"
+              name="suburb"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form__field form__field--right"
+          >
+            <label
+              htmlFor="stateInput"
+            >
+              State
+            </label>
+            <input
+              id="stateInput"
+              name="state"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="form__row"
+        >
+          <div
+            className="form__field form__field--left"
+          >
+            <label
+              htmlFor="postcode"
+            >
+              Postcode
+            </label>
+            <input
+              id="postcode"
+              name="postcode"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="form__field form__field--right"
+          >
+            <label
+              htmlFor="countryInput"
+            >
+              Country
+            </label>
+            <input
+              id="countryInput"
+              name="country"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      className="form__row hcard-builder__buttons"
+    >
+      <div
+        className="form__field form__field--left hcard-builder__button"
+      >
+        <button
+          className="button button--grey"
+          onClick={[Function]}
+          type="button"
+        >
+          Upload Avatar Image
+        </button>
+        <input
+          color="grey"
+          id="fileItem"
+          onChange={[Function]}
+          type="file"
+        />
+      </div>
+      <div
+        className="form__field form__field--right hcard-builder__button"
+      >
+        <button
+          className="button button--light-blue"
+          onClick={[Function]}
+          type="submit"
+        >
+          Create hCard
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="hcard-builder__preview"
+  >
+    <div
+      className="hcard-builder__preview-header"
+    >
+      <h2
+        className="hcard-builder__preview-title"
+      >
+        hCard Preview
+      </h2>
+    </div>
+    <div
+      className="hcard-preview vcard"
+    >
+      <div
+        className="hcard-preview__header"
+      >
+        <span
+          className="fn"
+        >
+           
+        </span>
+        <img
+          alt="hcard owner"
+          className="photo"
+          src="avatar.png"
+        />
+      </div>
+      <div
+        className="hcard-preview__content"
+      >
+        <div
+          className="preview-field"
+        >
+          <label
+            className="preview-field__label"
+          >
+            Email
+          </label>
+          <span
+            className="preview-field__text email"
+          >
+            
+          </span>
+        </div>
+        <hr
+          className="line line--small"
+        />
+        <div
+          className="preview-field"
+        >
+          <label
+            className="preview-field__label"
+          >
+            Phone
+          </label>
+          <span
+            className="preview-field__text tel"
+          >
+            
+          </span>
+        </div>
+        <hr
+          className="line line--small"
+        />
+        <div
+          className="adr"
+        >
+          <div
+            className="preview-field"
+          >
+            <label
+              className="preview-field__label"
+            >
+              Address
+            </label>
+            <span
+              className="preview-field__text street-address"
+            >
+               
+            </span>
+          </div>
+          <hr
+            className="line line--small"
+          />
+          <div
+            className="preview-field"
+          >
+            <label
+              className="preview-field__label"
+            >
+              
+            </label>
+            <span
+              className="preview-field__text locality region"
+            >
+               
+            </span>
+          </div>
+          <hr
+            className="line line--small"
+          />
+          <div
+            className="hcard-preview__row"
+          >
+            <div
+              className="preview-field hcard-preview__preview-field"
+            >
+              <label
+                className="preview-field__label"
+              >
+                Postcode
+              </label>
+              <span
+                className="preview-field__text postal-code"
+              >
+                
+              </span>
+            </div>
+            <div
+              className="preview-field hcard-preview__preview-field"
+            >
+              <label
+                className="preview-field__label"
+              >
+                Country
+              </label>
+              <span
+                className="preview-field__text country-name"
+              >
+                
+              </span>
+            </div>
+          </div>
+          <hr
+            className="line line--small"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

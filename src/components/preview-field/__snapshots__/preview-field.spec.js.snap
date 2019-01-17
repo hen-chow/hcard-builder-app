@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PreviewField /> renders the expected HTML 1`] = `
+<div
+  className="preview-field"
+>
+  <label
+    className="preview-field__label"
+  >
+    Email
+  </label>
+  <span
+    className="preview-field__text emailInput"
+  >
+    test-person@gmail.com
+  </span>
+</div>
+`;

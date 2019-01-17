@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PersonalDetailsForm /> renders the expected HTML 1`] = `
+<div
+  className="personal-details-form"
+>
+  <span
+    className="form__title"
+  >
+    Personal details
+  </span>
+  <hr
+    className="line line--small"
+  />
+  <form>
+    <div
+      className="form__row"
+    >
+      <div
+        className="form__field form__field--left"
+      >
+        <label
+          htmlFor="givenNameInput"
+        >
+          Given Name
+        </label>
+        <input
+          id="givenNameInput"
+          name="givenName"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__field form__field--right"
+      >
+        <label
+          htmlFor="surnameInput"
+        >
+          Surname
+        </label>
+        <input
+          id="surnameInput"
+          name="surname"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="form__row"
+    >
+      <div
+        className="form__field form__field--left"
+      >
+        <label
+          htmlFor="emailInput"
+        >
+          Email
+        </label>
+        <input
+          id="emailInput"
+          name="email"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form__field form__field--right"
+      >
+        <label
+          htmlFor="phoneInput"
+        >
+          Phone
+        </label>
+        <input
+          id="phoneInput"
+          name="phone"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;
